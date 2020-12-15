@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="L4O-77-5QR">
             <objects>
-                <viewController id="BMb-8x-aPD" sceneMemberID="viewController">
+                <viewController id="BMb-8x-aPD" customClass="SecondTabViewController" customModule="kadai7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tBV-LX-uWa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp0-Z6-2Mx">
                                 <rect key="frame" x="184" y="167" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BMb-8x-aPD" eventType="touchUpInside" id="nbg-Kh-Ize"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLL-y1-BYx">
                                 <rect key="frame" x="188" y="205" width="42" height="21"/>
@@ -59,15 +62,20 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="S79-og-H6B"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="nLL-y1-BYx" id="7bw-bb-0tl"/>
+                        <outlet property="secondTextField1" destination="9cP-5q-Pja" id="KuZ-Lw-gDF"/>
+                        <outlet property="secondTextField2" destination="ibi-WB-EGK" id="1aS-rW-ZR8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75l-Vx-dFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="-194"/>
+            <point key="canvasLocation" x="1593" y="-153"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="IZj-hS-ZV9">
             <objects>
-                <viewController id="c0u-43-Tev" sceneMemberID="viewController">
+                <viewController id="c0u-43-Tev" customClass="FirstTabViewController" customModule="kadai7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZLg-KT-zqM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +101,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ci-kx-qOW">
                                 <rect key="frame" x="184" y="167" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculationButton:" destination="c0u-43-Tev" eventType="touchUpInside" id="wCT-v0-3Zn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXt-0X-BW1">
                                 <rect key="frame" x="184" y="205" width="42" height="21"/>
@@ -115,6 +126,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="lKa-0P-uL1"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="TXt-0X-BW1" id="YqX-sK-2Ix"/>
+                        <outlet property="firstTextField1" destination="cjv-wA-68X" id="VSL-9p-Ba0"/>
+                        <outlet property="firstTextField2" destination="jUI-MI-DVs" id="Dcq-xv-fqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEw-3l-2e6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

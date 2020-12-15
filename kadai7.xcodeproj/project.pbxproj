@@ -13,6 +13,8 @@
 		7561E31A25879C1000D17AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7561E31825879C1000D17AF8 /* Main.storyboard */; };
 		7561E31C25879C1B00D17AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7561E31B25879C1B00D17AF8 /* Assets.xcassets */; };
 		7561E31F25879C1B00D17AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7561E31D25879C1B00D17AF8 /* LaunchScreen.storyboard */; };
+		7561E3282588D28200D17AF8 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7561E3272588D28200D17AF8 /* FirstTabViewController.swift */; };
+		7561E32B2588D29800D17AF8 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7561E32A2588D29800D17AF8 /* SecondTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7561E31B25879C1B00D17AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7561E31E25879C1B00D17AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7561E32025879C1B00D17AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7561E3272588D28200D17AF8 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
+		7561E32A2588D29800D17AF8 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				7561E31225879C0F00D17AF8 /* AppDelegate.swift */,
 				7561E31425879C0F00D17AF8 /* SceneDelegate.swift */,
 				7561E31625879C0F00D17AF8 /* ViewController.swift */,
+				7561E3272588D28200D17AF8 /* FirstTabViewController.swift */,
+				7561E32A2588D29800D17AF8 /* SecondTabViewController.swift */,
 				7561E31825879C1000D17AF8 /* Main.storyboard */,
 				7561E31B25879C1B00D17AF8 /* Assets.xcassets */,
 				7561E31D25879C1B00D17AF8 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7561E31725879C1000D17AF8 /* ViewController.swift in Sources */,
+				7561E32B2588D29800D17AF8 /* SecondTabViewController.swift in Sources */,
+				7561E3282588D28200D17AF8 /* FirstTabViewController.swift in Sources */,
 				7561E31325879C0F00D17AF8 /* AppDelegate.swift in Sources */,
 				7561E31525879C0F00D17AF8 /* SceneDelegate.swift in Sources */,
 			);

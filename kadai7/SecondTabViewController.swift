@@ -14,8 +14,9 @@ class SecondTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        secondTextField1.keyboardType = .numberPad
+        secondTextField2.keyboardType = .numberPad
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func calculateButton(_ sender: Any) {
@@ -24,20 +25,10 @@ class SecondTabViewController: UIViewController {
     
     func calculate() {
         let number1 = Int(secondTextField1.text!) ?? 0
-        
         let number2 = Int(secondTextField2.text!) ?? 0
-        
         let answer = number1 - number2
-        
         answerLabel.text = String(answer)
+        secondTextField1.resignFirstResponder()
+        secondTextField2.resignFirstResponder()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

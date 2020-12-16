@@ -8,9 +8,9 @@
 import UIKit
 
 class SecondTabViewController: UIViewController {
-    @IBOutlet var secondTextField1: UITextField!
-    @IBOutlet var secondTextField2: UITextField!
-    @IBOutlet var answerLabel: UILabel!
+    @IBOutlet private var secondTextField1: UITextField!
+    @IBOutlet private var secondTextField2: UITextField!
+    @IBOutlet private var answerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +19,11 @@ class SecondTabViewController: UIViewController {
 
     }
     
-    @IBAction func calculateButton(_ sender: Any) {
+    @IBAction private func calculateButton(_ sender: Any) {
         calculate()
     }
     
-    func calculate() {
+    private func calculate() {
         let number1 = Int(secondTextField1.text!) ?? 0
         let number2 = Int(secondTextField2.text!) ?? 0
         let answer = number1 - number2
